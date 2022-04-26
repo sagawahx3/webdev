@@ -1,0 +1,382 @@
+/*overall page configuration*/
+* {
+  box-sizing: border-box;
+  font-family: "Arial";
+}
+
+body {
+  margin:0;
+}
+
+.content {
+  color:#fff;
+}
+/*top bar*/
+
+.top-bar{
+  position: absolute;
+  width: 100%;
+  height: 40px; 
+  padding:0px;
+  background: -webkit-linear-gradient(bottom,#ffffff, #acbadd 70%);
+  background: -moz-linear-gradient(bottom, #ffffff, #acbadd 70%);
+  background: -o-linear-gradient(bottom, #ffffff, #acbadd 70%);
+  background: -ms-linear-gradient(bottom, #ffffff, #acbadd 70%);
+  background: linear-gradient(bottom, #ffffff, #acbadd 70%);
+  border: 5px rgb(137, 151, 188);
+ }  
+
+ .top-bar span{
+  position: absolute;
+  width: 100%;
+  height: 40px; 
+  padding: 0px;
+  background: rgba(255, 255, 255, 0);
+  background-image: linear-gradient(transparent 50%, rgba(171,187,223,.5) 50%);
+  background-size: 2px 2px;
+  border-radius: 4px;
+  border: 2px rgb(137, 151, 188);
+  }    
+
+.top-bar img {
+  margin-left: 60px;
+  padding: 2px;
+  }
+
+  /*top menu*/
+
+  .menu-top { 
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    margin: 0 -5px;
+   }
+
+.button-top {
+    background: -webkit-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+    background: -moz-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+    background: -o-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+    background: -ms-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+    background: linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+    border: 1px solid #CCCCCE;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, .3),
+                  0 2px 7px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    display: block;
+
+    padding: 5px 15px;
+    width: 80px;
+    margin: 0 5px;
+    }
+
+    .login-button {
+      font-family: "Trebuchet MS";
+      text-decoration: none;
+      font-weight: bold;
+      line-height: 25px;
+      text-align: center;
+      text-shadow:1px 1px 0 #FFF;
+      color: #616165;
+
+    }
+
+    .reg-button {
+      font-family: "Trebuchet MS";
+      text-decoration: none;
+      font-weight: bold;
+      line-height: 25px;
+      text-align: center;
+      text-shadow:1px 1px 0 #FFF;
+      color: #616165;
+
+    }
+
+    .login-button:before {
+      border: 1px solid #FFF;
+      border-radius: 3px;
+      box-shadow: inset 0 -2px 12px -4px rgba(70, 70, 70, .2),
+                    inset 0 3px 2px -1px rgba(255, 255, 255, 1);
+      content: "";
+      margin: 0 5px;
+      bottom: 0px;
+      left: 90px;
+      right: 0px;
+      top: 0px;
+      padding: 5px;
+      position: absolute;
+
+    }
+
+    .login-button:after {
+      background: rgba(255, 255, 255, .4);
+      border-radius: 2px;
+      content: "";
+      margin: 0 5px;
+      bottom: 15px;
+      left: 90px;
+      right: 0px;
+      top: 0px;
+      position: absolute;
+
+    }
+ 
+    .reg-button:before {
+      border: 1px solid #FFF;
+      border-radius: 3px;
+      box-shadow: inset 0 -2px 12px -4px rgba(70, 70, 70, .2),
+                    inset 0 3px 2px -1px rgba(255, 255, 255, 1);
+      content: "";
+      margin: 0 5px;
+      bottom: 0px;
+      left: 0px;
+      right: 90px;
+      top: 0px;
+      padding: 5px;
+      position: absolute;
+
+    }
+
+    .reg-button:after {
+      background: rgba(255, 255, 255, .4);
+      border-radius: 2px;
+      content: "";
+      margin: 0 5px;
+      bottom: 15px;
+      left: 0px;
+      right: 90px;
+      top: 0px;
+      padding: 5px;
+      position: absolute;
+
+    }
+
+    /*.button-top:before{
+      border: 1px solid #FFF;
+      border-radius: 3px;
+      box-shadow: inset 0 -2px 12px -4px rgba(70, 70, 70, .2),
+                    inset 0 3px 2px -1px rgba(255, 255, 255, 1);
+      content: "";
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      padding: 5px;
+      position: absolute;
+     }
+  
+     .button-top:after{
+      background: rgba(255, 255, 255, .4);
+      border-radius: 2px;
+      content: "";
+      bottom: 40px;
+      left: 40px;
+      right: 40px;
+      top: 40px;
+      position: absolute;
+     }*/
+
+  .button-top:active{
+      box-shadow: inset 0 0 7px rgba(0, 0, 0, .2);
+
+     }
+   
+     .button-top:active:before{
+       border: none;
+       box-shadow:none;
+      }
+    
+    .button-top:hover { 
+    background: -webkit-linear-gradient(bottom, #a8e1f0, #76c7db 70%);
+    border: 1px solid #00617a;
+      border-radius: 3px;
+    }
+
+    .login-form{
+      background: #ffffff;
+      position: absolute;
+      top: -160px;
+      right: 0px;
+      width: 15%;
+      height: 20%;
+      border-radius: 5px;
+      border: 2px solid rgb(216, 210, 220)
+    }
+
+    .login-form form{
+      background: #ffffff;
+      position: absolute;
+      top: 15%;
+    }
+
+    .login-form input{
+      margin: 10px 5px;
+    }
+    
+/*grid configuration*/
+
+.grid-container {
+  position: absolute;
+  height: 100%; 
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    'header header header header header header header'
+    'menu main main main main main right'
+    'menu main main main main main right'
+    'menu main main main main main right'
+    'menu main main main main main right'
+    'menu main main main main main right'
+    'menu main main main main main right'
+    'menu main main main main main right'
+    'menu main main main main main right'
+    'menu main main main main main right'
+    'menu main main main main main right'
+    'menu main main main main main right'
+    'menu main main main main main right'
+    'menu main main main main main right'
+    'menu main main main main main right'
+    'menu main main main main main right'
+    'menu main main main main main right'
+    'menu footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+}
+
+/*banner*/
+
+.item1 { 
+  grid-area: header; 
+  max-height: 180px;
+}
+
+.item1 img {
+width: 100%;
+max-height: 200px;
+}
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+ /*menu*/
+
+ .item2 { 
+   border-radius: 4px;
+   grid-area: menu; 
+   display: flex;
+   flex-flow: column nowrap;
+  }
+
+  .item2 div {
+    width:100px;
+    height:60px;
+    padding:40px;
+  }
+
+      /*---menu button*/
+
+    label {
+        /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+    }
+
+    .button {
+        /* Para posicionar os botões para a mesma posição dos campos de texto */
+        padding-left: 90px; /* mesmo tamanho que os elementos do tipo label */
+    }
+    button {
+        /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+        margin-left: .5em;
+    }
+    
+    .botao1{
+         background: -webkit-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+         background: -moz-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+         background: -o-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+         background: -ms-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+         background: linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+         border: 1px solid #CCCCCE;
+         border-radius: 3px;
+         box-shadow: 0 3px 0 rgba(0, 0, 0, .3),
+                       0 2px 7px rgba(0, 0, 0, 0.2);
+         color: #616165;
+         display: block;
+         font-family: "Trebuchet MS";
+         font-size: 14px;
+         font-weight: bold;
+         line-height: 25px;
+         text-align: center;
+         text-decoration: none;
+         text-shadow:1px 1px 0 #FFF;
+         padding: 5px 15px;
+         position: absolute;
+         width: 120px;
+
+    }
+    
+    .botao1:before{
+         border: 1px solid #FFF;
+         border-radius: 3px;
+         box-shadow: inset 0 -2px 12px -4px rgba(70, 70, 70, .2),
+                       inset 0 3px 2px -1px rgba(255, 255, 255, 1);
+         content: "";
+         bottom: 0;
+         left: 0;
+         right: 0;
+         top: 0;
+         padding: 5px;
+         position: absolute;
+        }
+     
+        .botao1:after{
+         background: rgba(255, 255, 255, .4);
+         border-radius: 2px;
+         content: "";
+         bottom: 15px;
+         left: 0px;
+         right: 0px;
+         top: 0px;
+         position: absolute;
+        }
+      
+     .botao1:active{
+         box-shadow: inset 0 0 7px rgba(0, 0, 0, .2);
+
+        }
+      
+        .botao1:active:before{
+          border: none;
+          box-shadow:none;
+         }
+       
+       .botao1:hover { 
+       background: -webkit-linear-gradient(bottom, #a8e1f0, #76c7db 70%);
+       border: 1px solid #00617a;
+         border-radius: 3px;
+       }
+      
+ /*corpo*/
+
+      .item3 {        
+        border-radius: 4px;
+        grid-area: main; 
+      }
+
+      iframe{
+        overflow: hidden;
+        border-radius: 4px;
+        border-style: solid;
+        border-color: #2196F3;
+
+      }
