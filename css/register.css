@@ -1,0 +1,9 @@
+/*overall page configuration*/
+* {
+  box-sizing: border-box;
+  font-family: "Arial";
+}
+
+body {
+  margin:0;
+}

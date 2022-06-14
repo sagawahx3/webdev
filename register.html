@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+	<link rel="stylesheet" href="css/register.css">
+
+    <title>Cadastro</title>
+    <meta charset="utf-8">
+	
+  </head>
+  <body>
+    <h1>Cadastro/h1>
+    <div class="register-form">
+             
+      <form name ="reg-form" required="required" method="post">
+         
+          <div class="register-username">
+          <label for="username">Username:</label><br>
+          <input type="text" id="user" />
+          </div>
+
+          <div class="register-password">
+          <label for="password">Password:  </label><br>
+          <input type="password" id="pw" />
+          </div>
+
+          <div class="register-email">
+          <label for="password">Email:  </label><br>
+          <input type="email" id="email" /><br>
+          </div>
+
+              <div class="register-submit">
+              <button type="submit" onclick="submitForm()" >Register</button>
+          </div>
+          </form>
+  
+  </div>
+
+  <script src="js/register.js"></script>
+
+  </body>
+</html>

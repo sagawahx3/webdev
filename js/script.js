@@ -30,3 +30,24 @@ btn.addEventListener("click", function() {
       }, 5);
 });
 
+function loginForm() {
+
+   var user = document.querySelector("#login-userid");
+   var pw = document.querySelector("#login-passid");
+
+   var storedUser = localStorage.getItem("username");
+   var storedPw = localStorage.getItem("password");
+   
+   if (user.value != storedUser || user.value == "") {
+       alert('O usuário é incorreto.'); 
+   } 
+   else if  (pw.value != storedPw || pw.value == "") {
+      alert('A senha é incorreta.');
+   }
+   else {
+      alert('Login bem sucedido. Bem vindo, ' + storedUser +'.');
+      localStorage.setItem("login",1);
+   }
+
+
+}

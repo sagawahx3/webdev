@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ragnarok AU - force the engine</title>
+    <title>IFSP</title>
 </head>
 <body>
         <div class="grid-container">
@@ -13,33 +13,34 @@
                 <img class="banner" src="src/banner.png" alt="banner">
             </div>
             <div class="item2">
-                <div><a class="botao1" href="news.html" target="iframe1">News</a></div>
-                <div><a class="botao1" href="download.html"  target="iframe1">Download</a></div>
-                <div><a class="botao1" href="info.html"  target="iframe1">Info</a></div>
-                <div><a class="botao1" href="contact.html"  target="iframe1">Contact</a></div>
-                <div><a class="botao1" href="forums.html"  target="iframe1">Forums</a></div>
+                <div><a class="botao1" href="news.html" target="iframe1">Sobre</a></div>
+                <div><a class="botao1" href="download.html"  target="iframe1">Cursos</a></div>
+                <div><a class="botao1" href="profile.html"  target="iframe1">Perfil</a></div>
             </div>
             <div class="item3">
                 <iframe name="iframe1" src="news.html" width="100%" height="100%" id="yourframe" scrolling= "no"> </iframe>
             </div>
-            <div class="item4">Right</div>
-            <div class="item5">Footer</div>
+            <div class="item4">
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=R.%20Pedro%20Vicente,%20625%20-%20Canind%C3%A9,%20S%C3%A3o%20Paulo%20-%20SP,%2001109-010&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;width:100%;height:100%;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:100%;}</style></div></div>
+            </div>
+                <div class="item5">Endereço: Rua Pedro Vicente, 625 - Canindé - São Paulo - SP - Brasil - CEP: 01109-010
+                <br>Telefone: (11) 2763-7535 - Comunicação Social - Informações sobre vestibular e visitas monitoradas.</div>
           </div>
 
          <div class="login-form">
              
-            <form name ="form" action="/pagina-processa-dados-do-form" method="post">
+            <form name ="form" method="post">
                 <div class="login-username">
                 <label for="username">Username:	</label>
-                <input align="right" type="text" id="nome" />
+                <input align="right" type="text" id="login-userid" />
                 </div>
                 <div class="login-password">
                 <label for="password">Password:  </label>
-                <input align="right" type="password" id="nome" />
+                <input align="right" type="password" id="login-passid" />
                 </div>
                     <div class="login-submit">
-                    <button type="submit">Log In</button>
-                </div>
+                        <button onclick="loginForm()" >Login</button>
+                    </div>
                 </form>
         
         </div>
@@ -49,7 +50,7 @@
             <img class="logo" src="src/minilogo.png" alt="banner"> 
         </span>
             <div class="menu-top">
-                <div class="button-top"><a class="reg-button">Register</a></div>
+                <div class="button-top"><a class="reg-button" href="register.html" target="iframe1">Cadastrar</a></div>
                 <div class="button-top"><a class="login-button">Log-in</a></div>
             </div>  
          </div>
